@@ -1,0 +1,22 @@
+[
+  {
+    "outputFileName": "wwwroot/css/site.bundle.min.css",
+    "inputFiles": [
+      "wwwroot/css/base/variables.css",
+      "wwwroot/css/base/typography.css",
+      "wwwroot/css/base/page.css",
+      "wwwroot/css/blocks/site-header.css",
+      "wwwroot/css/blocks/site-footer.css",
+      "wwwroot/css/blocks/main-hero.css",
+      "wwwroot/css/blocks/main-metrics.css",
+      "wwwroot/css/blocks/main-segments.css",
+      "wwwroot/css/blocks/main-technologies.css",
+      "wwwroot/css/blocks/main-features.css",
+      "wwwroot/css/blocks/demo-cabinet.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "adjustRelativePaths": false
+    }
+  }
+]

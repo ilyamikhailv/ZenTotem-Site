@@ -8,18 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/css/landing.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/site.bundle.min.css" asp-append-version="true"/>
 </head>
 <body>
-<header>
-    <partial name="_Header"/>
-</header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
+<partial name="_Header"/>
+<main>
+    @RenderBody()
+</main>
 <partial name="_Footer"/>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
