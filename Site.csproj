@@ -11,10 +11,6 @@
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
   </ItemGroup>
 
-  <!-- dotnet watch: пересборка и BuildBundlerMinifier при правках исходных CSS -->
-  <ItemGroup>
-    <Watch Include="bundleconfig.json" />
-    <Watch Include="wwwroot/css/**/*.css" />
-  </ItemGroup>
+
 
 </Project>
