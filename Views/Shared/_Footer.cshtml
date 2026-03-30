@@ -1,7 +1,18 @@
 @*
   Роль: общий подвал — копирайт, контакты (почта, телефон).
-  Figma: Main_1 / second → footer.
+  Figma: footer (node 37879:706).
   Родитель: Views/Shared/_Layout.cshtml
 *@
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+    <a class="site-footer__contact" href="tel:+78883883838">
+      <span class="site-footer__icon site-footer__icon--phone" aria-hidden="true"></span>
+      <span class="site-footer__text">+7 888 388 38 38</span>
+    </a>
+    <a class="site-footer__contact" href="mailto:programmatic@zentotem.net">
+      <span class="site-footer__icon site-footer__icon--letter" aria-hidden="true"></span>
+      <span class="site-footer__text">programmatic@zentotem.net</span>
+    </a>
+    <span class="site-footer__copyright">Totem, 2026. Все права защищены</span>
+  </div>
 </footer>

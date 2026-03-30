@@ -5,14 +5,14 @@
       "wwwroot/css/base/variables.css",
       "wwwroot/css/base/typography.css",
       "wwwroot/css/base/page.css",
-      "wwwroot/css/blocks/site-header.css",
-      "wwwroot/css/blocks/site-footer.css",
-      "wwwroot/css/blocks/main-hero.css",
-      "wwwroot/css/blocks/main-metrics.css",
-      "wwwroot/css/blocks/main-segments.css",
-      "wwwroot/css/blocks/main-technologies.css",
-      "wwwroot/css/blocks/main-features.css",
-      "wwwroot/css/blocks/demo-cabinet.css"
+      "wwwroot/css/blocks/site-header/site-header.css",
+      "wwwroot/css/blocks/site-footer/site-footer.css",
+      "wwwroot/css/blocks/main-hero/main-hero.css",
+      "wwwroot/css/blocks/main-metrics/main-metrics.css",
+      "wwwroot/css/blocks/main-segments/main-segments.css",
+      "wwwroot/css/blocks/main-technologies/main-technologies.css",
+      "wwwroot/css/blocks/main-features/main-features.css",
+      "wwwroot/css/blocks/demo-cabinet/demo-cabinet.css"
     ],
     "minify": {
       "enabled": true,
