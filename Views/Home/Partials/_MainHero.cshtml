@@ -1,7 +1,61 @@
 @*
   Роль: верхний блок главной — градиентный фон (bg), герой (first): визуал, метрики, заголовки, CTA.
-  Figma: Main_1 → bg, first (в составе потока страницы).
+  Figma: Main_1 → bg, first (37879:852).
   Родитель: Views/Home/Index.cshtml
 *@
 <section class="main-hero" aria-label="Герой">
+  <div class="main-hero__inner">
+    <div class="main-hero__decor" aria-hidden="true">
+      @* <img class="main-hero__line"
+           src="~/css/blocks/main-hero/hero-line.svg"
+           width="1920"
+           height="1057"
+           alt=""/>
+      <img class="main-hero__photo"
+           src="~/css/blocks/main-hero/hero-photo-98422b.png"
+           width="790"
+           height="735"
+           alt="Работа с аналитикой и платформой на ноутбуке"/> *@
+    </div>
+
+    <p class="main-hero__lead">
+      ML платформа для закупки трафика и аналитики в едином окне
+    </p>
+
+    <h1 class="main-hero__title">
+      Ваш бренд<br/>
+      в центре внимания
+    </h1>
+
+    <div class="main-hero__cta">
+      <partial name="_RequestPlatformAccessButton"/>
+    </div>
+
+    <div class="main-hero__cards">
+      <article class="main-hero__card">
+        <p class="main-hero__card-label">Показы</p>
+        <p class="main-hero__card-value">41&nbsp;600&nbsp;000</p>
+      </article>
+      <article class="main-hero__card">
+        <p class="main-hero__card-label">Охваты</p>
+        <p class="main-hero__card-value">13&nbsp;860&nbsp;417</p>
+      </article>
+      <article class="main-hero__card main-hero__card--clicks">
+        <p class="main-hero__card-label">Клики</p>
+        <p class="main-hero__card-value">13&nbsp;860&nbsp;417</p>
+        <div class="main-hero__chart" aria-hidden="true">
+          <span class="main-hero__chart-bar" style="--bar-h: 46px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 34px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 54px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 59px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 84px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 63px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 94px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 143px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 159px"></span>
+          <span class="main-hero__chart-bar" style="--bar-h: 198px"></span>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>

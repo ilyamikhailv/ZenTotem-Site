@@ -1,3 +1,141 @@
 .main-hero {
-  --bem-block: 0;
+  position: relative;
+  color: #ffffff;
+  height: 1135px;
+  overflow: hidden;
+}
+
+.main-hero__inner {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.main-hero__decor {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+}
+
+.main-hero__line {
+}
+
+.main-hero__lead {
+  box-sizing: border-box;
+  width: 697px;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-hero__title {
+  box-sizing: border-box;
+  width: 749px;
+  font-family: var(--font-heading);
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-hero__cta {
+  position: absolute;
+  z-index: 2;
+  left: 539px;
+  top: 344px;
+  width: 362px;
+}
+
+.main-hero__cards {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 1135px;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.main-hero__card {
+  position: absolute;
+  box-sizing: border-box;
+  width: 305px;
+  padding: 20px;
+  pointer-events: auto;
+  background-color: rgba(255, 255, 255, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(63, 15, 136, 0.06);
+  -webkit-backdrop-filter: blur(32px);
+  backdrop-filter: blur(32px);
+}
+
+.main-hero__card:nth-child(1) {
+  left: 730px;
+  top: 663px;
+  min-height: 176px;
+}
+
+.main-hero__card:nth-child(2) {
+  left: 730px;
+  top: 859px;
+  min-height: 176px;
+}
+
+.main-hero__card:nth-child(3) {
+  left: 1055px;
+  top: 663px;
+  min-height: 372px;
+}
+
+.main-hero__card-label {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: #222222;
+}
+
+.main-hero__card-value {
+  margin: 76px 0 0;
+  padding: 0;
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.3px;
+  color: #222222;
+}
+
+.main-hero__chart {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  height: 198px;
+}
+
+.main-hero__chart-bar {
+  flex-shrink: 0;
+  width: 20px;
+  height: var(--bar-h);
+  border-radius: 6px;
+  background-color: rgba(89, 27, 217, 0.5);
 }

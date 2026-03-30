@@ -13,3 +13,11 @@ body {
 main {
   flex-grow: 1;
 }
+.main-content {
+  flex-grow: 1;
+  border-radius: 32px 32px 0 0;
+  background: #fff;
+  padding: 100px 0 120px;
+  display: flex;
+  flex-direction: column;
+}
