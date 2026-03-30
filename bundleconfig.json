@@ -12,7 +12,8 @@
       "wwwroot/css/blocks/main-segments/main-segments.css",
       "wwwroot/css/blocks/main-technologies/main-technologies.css",
       "wwwroot/css/blocks/main-features/main-features.css",
-      "wwwroot/css/blocks/demo-cabinet/demo-cabinet.css"
+      "wwwroot/css/blocks/demo-cabinet/demo-cabinet.css",
+      "wwwroot/css/blocks/request-platform-access/request-platform-access-button.css"
     ],
     "minify": {
       "enabled": true,

@@ -1,0 +1,14 @@
+@*
+  Описание: первичная CTA-кнопка «Запросить доступ к платформе» — плашка с полностью скруглёнными краями (pill),
+  тёмный фон #222222, подпись белым Lato 20px / 400, межбуквенный интервал ≈ −1,5%.
+  Макет Figma: Zen Totem → node «Button» (37879:882).
+  Источник: https://www.figma.com/design/1vUxQatqdX1NNPgCPBT9FO/Zen-Totem?node-id=37879-882&m=dev
+  Подключение: <partial name="_RequestPlatformAccessButton" /> (при необходимости задайте ViewData["RequestPlatformAccessUrl"] для href).
+*@
+@{
+  var accessUrl = ViewData["RequestPlatformAccessUrl"] as string ?? "#";
+}
+<a class="request-platform-access-button"
+   href="@accessUrl">
+  Запросить доступ к платформе
+</a>
