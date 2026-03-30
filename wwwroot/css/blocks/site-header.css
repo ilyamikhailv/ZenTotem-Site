@@ -1,3 +1,81 @@
 .site-header {
-  --bem-block: 0;
+  color: #fff;
+}
+
+.site-header__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 1440px;
+  min-height: 80px;
+  margin-inline: auto;
+  padding-inline: 70px;
+}
+
+.site-header__logo {
+  justify-self: start;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.3333333333333333;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header__logo:hover,
+.site-header__logo:focus-visible {
+  text-decoration: underline;
+}
+
+.site-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  justify-self: center;
+}
+
+.site-header__nav-link,
+.site-header__account {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header__nav-link:hover,
+.site-header__nav-link:focus-visible,
+.site-header__account:hover,
+.site-header__account:focus-visible {
+  text-decoration: underline;
+}
+
+.site-header__account {
+  justify-self: end;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .site-header__inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    min-height: unset;
+    padding-inline: 1.25rem;
+    padding-block: 1rem;
+  }
+
+  .site-header__nav {
+    justify-self: stretch;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .site-header__account {
+    justify-self: center;
+    text-align: center;
+  }
 }
