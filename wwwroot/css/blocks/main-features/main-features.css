@@ -4,22 +4,16 @@
 
 .main-features__inner {
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 340px 93px 340px 96px 340px;
+  display: flex;
+  justify-content: space-between;
   min-height: 273px;
-  padding: 0 111px 0 120px;
+  padding: 0 100px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
-
-.main-features__item:nth-child(1) {
-  grid-column: 1;
-}
-
-.main-features__item:nth-child(2) {
-  grid-column: 3;
-}
-
-.main-features__item:nth-child(3) {
-  grid-column: 5;
+.main-features__item {
+  width: 340px;
+  flex-shrink: 0;
 }
 
 .main-features__icon-wrap {
@@ -30,7 +24,7 @@
 
 .main-features__icon-wrap--decor::before,
 .main-features__icon-wrap--decor::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 0;
   border-radius: 50%;
