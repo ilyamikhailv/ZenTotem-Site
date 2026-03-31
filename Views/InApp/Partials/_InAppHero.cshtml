@@ -1,3 +1,18 @@
-@* Роль: верхний блок In-App — градиентный фон, герой (first): подзаголовок, декор, H1, CTA «Запросить доступ к платформе».
-  Figma: In-App_приоритет → first (37879:1430). Родитель: Views/InApp/Index.cshtml.
-  Следующий этап: разметка и <partial name="_RequestPlatformAccessButton" />. *@
+@* Роль: верхний блок In-App — заголовок, лид, CTA. Figma: In-App_приоритет → first (37879:1430).
+  Родитель: Views/InApp/Index.cshtml. Стили: wwwroot/css/blocks/in-app-hero/in-app-hero.css. *@
+<section class="in-app-hero" aria-label="In-App">
+  <div class="in-app-hero__inner">
+    <div class="in-app-hero__content">
+      <h1 class="in-app-hero__title">
+        In-App — эпицентр<br />
+        внимания вашей аудитории
+      </h1>
+      <div class="in-app-hero__lead">
+        <span>Реклама вашего бренда внутри популярных приложений</span>
+      </div>
+    </div>
+    <div class="in-app-hero__cta">
+      <partial name="_RequestPlatformAccessButton" />
+    </div>
+  </div>
+</section>

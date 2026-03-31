@@ -1,0 +1,56 @@
+/**
+ * Герой страницы In-App — Views/InApp/Partials/_InAppHero.cshtml.
+ * Декоративная линия: тот же asset, что у блока героя на главной (путь к файлу, не класс).
+ */
+
+.in-app-hero {
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.in-app-hero__inner {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 80px 70px 120px;
+}
+
+.in-app-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.in-app-hero__lead {
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.in-app-hero__title {
+  box-sizing: border-box;
+  font-family: var(--font-heading);
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.in-app-hero__cta {
+  display: flex;
+  justify-content: center;
+}

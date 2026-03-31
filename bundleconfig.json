@@ -8,6 +8,7 @@
       "wwwroot/css/blocks/site-header/site-header.css",
       "wwwroot/css/blocks/site-footer/site-footer.css",
       "wwwroot/css/blocks/main-hero/main-hero.css",
+      "wwwroot/css/blocks/in-app-hero/in-app-hero.css",
       "wwwroot/css/blocks/main-metrics/main-metrics.css",
       "wwwroot/css/blocks/main-segments/main-segments.css",
       "wwwroot/css/blocks/main-technologies/main-technologies.css",
