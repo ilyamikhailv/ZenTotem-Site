@@ -1,3 +1,245 @@
 .demo-cabinet {
-  --bem-block: 0;
+  color: #222222;
+  margin-bottom: 0;
+}
+
+.demo-cabinet__inner {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.demo-cabinet__title {
+  margin: 0 0 40px;
+  padding: 0;
+  font-family: var(--font-heading);
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.00536em;
+  text-align: center;
+  color: #222222;
+}
+
+.demo-cabinet__card {
+  box-sizing: border-box;
+  max-width: 1064px;
+  margin: 0 auto;
+  padding: 60px;
+  background: #ffffff;
+  border: 0.5px solid #ececec;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(236, 236, 236, 0.4);
+  display: grid;
+  grid-template-columns: minmax(0, 483px) minmax(0, 1fr);
+  column-gap: 82px;
+  align-items: start;
+}
+
+.demo-cabinet__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.demo-cabinet__field {
+  position: relative;
+  margin: 0;
+}
+
+.demo-cabinet__field--message {
+  margin-bottom: 20px;
+}
+
+.demo-cabinet__label--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.demo-cabinet__input,
+.demo-cabinet__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 23px 19px;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: #222222;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  outline: none;
+}
+
+.demo-cabinet__input::placeholder,
+.demo-cabinet__textarea::placeholder {
+  color: #a1a1a1;
+}
+
+.demo-cabinet__input {
+  height: 72px;
+}
+
+.demo-cabinet__textarea {
+  display: block;
+  min-height: 180px;
+  height: 180px;
+  resize: vertical;
+  padding-top: 23px;
+  line-height: 1.2;
+}
+
+.demo-cabinet__submit {
+  box-sizing: border-box;
+  width: 100%;
+  height: 72px;
+  margin: 0;
+  padding: 0 24px;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  background: #591bd9;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.demo-cabinet__submit:hover {
+  filter: brightness(1.05);
+}
+
+.demo-cabinet__submit:focus-visible {
+  outline: 2px solid #591bd9;
+  outline-offset: 3px;
+}
+
+.demo-cabinet__input:focus-visible,
+.demo-cabinet__textarea:focus-visible {
+  outline: 2px solid #591bd9;
+  outline-offset: 2px;
+}
+
+.demo-cabinet__benefits {
+  margin: 0;
+  padding: 8px 0 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.demo-cabinet__benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.demo-cabinet__benefit-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.demo-cabinet__benefit-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.demo-cabinet__benefit-title {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
+
+.demo-cabinet__benefit-text {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: #a1a1a1;
+}
+
+@media (max-width: 1100px) {
+  .demo-cabinet__card {
+    grid-template-columns: 1fr;
+    row-gap: 48px;
+    column-gap: 0;
+  }
+
+  .demo-cabinet__benefits {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .demo-cabinet__inner {
+    padding: 0 40px;
+  }
+
+  .demo-cabinet__title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .demo-cabinet__card {
+    padding: 40px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .demo-cabinet__inner {
+    padding: 0 20px;
+  }
+
+  .demo-cabinet__title {
+    font-size: 28px;
+    padding: 0 8px;
+    margin-bottom: 24px;
+  }
+
+  .demo-cabinet__card {
+    padding: 32px 24px;
+  }
+
+  .demo-cabinet__input,
+  .demo-cabinet__textarea,
+  .demo-cabinet__submit,
+  .demo-cabinet__benefit-title,
+  .demo-cabinet__benefit-text {
+    font-size: 18px;
+  }
+
+  .demo-cabinet__input {
+    height: 64px;
+  }
+
+  .demo-cabinet__textarea {
+    min-height: 160px;
+    height: 160px;
+  }
+
+  .demo-cabinet__submit {
+    height: 64px;
+  }
 }

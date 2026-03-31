@@ -1,7 +1,164 @@
 @*
   Роль: блок запроса доступа к демо-кабинету (форма и связанный контент на макете).
-  Figma: Main_1 / second → demo_form.
+  Figma: Main_1 / second → demo_form (37879:1873).
   Родитель: Views/Home/Index.cshtml (и при необходимости другие страницы).
 *@
-<section class="demo-cabinet" aria-label="Демо-кабинет">
+<section class="demo-cabinet" aria-labelledby="demo-cabinet-heading">
+  <div class="demo-cabinet__inner">
+    <h2 class="demo-cabinet__title" id="demo-cabinet-heading">
+      Откройте доступ<br />
+      к демо-кабинету
+    </h2>
+
+    <div class="demo-cabinet__card">
+      <form class="demo-cabinet__form" method="post" action="#" novalidate>
+        <div class="demo-cabinet__field">
+          <label class="demo-cabinet__label demo-cabinet__label--visually-hidden" for="demo-cabinet-name">Имя (обязательно)</label>
+          <input
+            class="demo-cabinet__input"
+            id="demo-cabinet-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Имя*"
+            required
+          />
+        </div>
+        <div class="demo-cabinet__field">
+          <label class="demo-cabinet__label demo-cabinet__label--visually-hidden" for="demo-cabinet-company">Название вашей компании</label>
+          <input
+            class="demo-cabinet__input"
+            id="demo-cabinet-company"
+            name="company"
+            type="text"
+            autocomplete="organization"
+            placeholder="Название вашей компании"
+          />
+        </div>
+        <div class="demo-cabinet__field">
+          <label class="demo-cabinet__label demo-cabinet__label--visually-hidden" for="demo-cabinet-email">Эл. почта (обязательно)</label>
+          <input
+            class="demo-cabinet__input"
+            id="demo-cabinet-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            inputmode="email"
+            placeholder="Эл. почта*"
+            required
+          />
+        </div>
+        <div class="demo-cabinet__field demo-cabinet__field--message">
+          <label class="demo-cabinet__label demo-cabinet__label--visually-hidden" for="demo-cabinet-message">Расскажите о вашей задаче</label>
+          <textarea
+            class="demo-cabinet__textarea"
+            id="demo-cabinet-message"
+            name="message"
+            rows="5"
+            placeholder="Расскажите о вашей задаче"
+          ></textarea>
+        </div>
+        <button class="demo-cabinet__submit" type="submit">Запросить доступ</button>
+      </form>
+
+      <ul class="demo-cabinet__benefits" role="list">
+        <li class="demo-cabinet__benefit">
+          <img
+            class="demo-cabinet__benefit-icon"
+            src="~/css/blocks/demo-cabinet/demo-cabinet-check.svg"
+            width="28"
+            height="28"
+            alt=""
+            decoding="async"
+          />
+          <div class="demo-cabinet__benefit-body">
+            <span class="demo-cabinet__benefit-title">Живая аналитика</span>
+            <span class="demo-cabinet__benefit-text">
+              отчёт по показам, кликам и охватам<br />
+              в реальном времени
+            </span>
+          </div>
+        </li>
+        <li class="demo-cabinet__benefit">
+          <img
+            class="demo-cabinet__benefit-icon"
+            src="~/css/blocks/demo-cabinet/demo-cabinet-check.svg"
+            width="28"
+            height="28"
+            alt=""
+            decoding="async"
+          />
+          <div class="demo-cabinet__benefit-body">
+            <span class="demo-cabinet__benefit-title">CPM от 70 ₽</span>
+            <span class="demo-cabinet__benefit-text">
+              без минимального бюджета<br />
+              на старте
+            </span>
+          </div>
+        </li>
+        <li class="demo-cabinet__benefit">
+          <img
+            class="demo-cabinet__benefit-icon"
+            src="~/css/blocks/demo-cabinet/demo-cabinet-check.svg"
+            width="28"
+            height="28"
+            alt=""
+            decoding="async"
+          />
+          <div class="demo-cabinet__benefit-body">
+            <span class="demo-cabinet__benefit-title">Трафик в 20+ странах</span>
+            <span class="demo-cabinet__benefit-text">один кабинет на все гео</span>
+          </div>
+        </li>
+        <li class="demo-cabinet__benefit">
+          <img
+            class="demo-cabinet__benefit-icon"
+            src="~/css/blocks/demo-cabinet/demo-cabinet-check.svg"
+            width="28"
+            height="28"
+            alt=""
+            decoding="async"
+          />
+          <div class="demo-cabinet__benefit-body">
+            <span class="demo-cabinet__benefit-title">ML-оптимизация ставок</span>
+            <span class="demo-cabinet__benefit-text">
+              алгоритм автоматически снижает<br />
+              CPM и повышает CTR
+            </span>
+          </div>
+        </li>
+        <li class="demo-cabinet__benefit">
+          <img
+            class="demo-cabinet__benefit-icon"
+            src="~/css/blocks/demo-cabinet/demo-cabinet-check.svg"
+            width="28"
+            height="28"
+            alt=""
+            decoding="async"
+          />
+          <div class="demo-cabinet__benefit-body">
+            <span class="demo-cabinet__benefit-title">Контроль качества площадок</span>
+            <span class="demo-cabinet__benefit-text">
+              верифицированный инвентарь,<br />
+              защита от фрода
+            </span>
+          </div>
+        </li>
+        <li class="demo-cabinet__benefit">
+          <img
+            class="demo-cabinet__benefit-icon"
+            src="~/css/blocks/demo-cabinet/demo-cabinet-check.svg"
+            width="28"
+            height="28"
+            alt=""
+            decoding="async"
+          />
+          <div class="demo-cabinet__benefit-body">
+            <span class="demo-cabinet__benefit-title">Полное сопровождение</span>
+            <span class="demo-cabinet__benefit-text">все сделаем за вас</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
