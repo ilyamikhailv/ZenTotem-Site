@@ -1,6 +1,8 @@
 .demo-cabinet {
   color: #222222;
   margin-bottom: 0;
+  background-color: #ffffff;
+  padding-bottom: 120px;
 }
 
 .demo-cabinet__inner {
