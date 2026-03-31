@@ -1,0 +1,248 @@
+.in-app-metrics-cards {
+  color: #222222;
+  margin-bottom: 120px;
+  background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 110px;
+}
+
+.in-app-metrics-cards__inner {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.in-app-metrics-cards__grid {
+  display: grid;
+  grid-template-columns: 670px 590px;
+  grid-template-rows: 484px 484px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Площадки: фото + затемнение + контент */
+.in-app-metrics-cards__cell--platforms {
+  box-sizing: border-box;
+  position: relative;
+  width: 670px;
+  height: 484px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.in-app-metrics-cards__platforms-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.in-app-metrics-cards__platforms-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+  z-index: 1;
+}
+
+.in-app-metrics-cards__platforms-content {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 94px 40px 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.in-app-metrics-cards__platforms-icon {
+  display: block;
+  flex-shrink: 0;
+}
+
+.in-app-metrics-cards__platforms-title {
+  margin: 40px 0 0;
+  padding: 0;
+  max-width: 412px;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.009375em;
+  color: #ffffff;
+}
+
+.in-app-metrics-cards__platforms-desc {
+  margin: 16px 0 0;
+  padding: 0;
+  max-width: 324px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3333333;
+  letter-spacing: -0.0125em;
+  color: #ffffff;
+}
+
+/* 50% игры */
+.in-app-metrics-cards__cell--games-share {
+  box-sizing: border-box;
+  width: 590px;
+  height: 340px;
+  align-self: end;
+  padding: 32px 40px 40px;
+  border-radius: 16px;
+  background-color: #591bd9;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.in-app-metrics-cards__games-share-value {
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+  font-family: var(--font-heading);
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.0142857em;
+  color: #ffffff;
+  text-align: right;
+}
+
+.in-app-metrics-cards__games-share-text {
+  margin: auto 0 0;
+  padding: 0;
+  max-width: 324px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.0125em;
+  color: #ffffff;
+}
+
+/* 90% время в приложениях */
+.in-app-metrics-cards__cell--mobile-time {
+  box-sizing: border-box;
+  width: 670px;
+  height: 484px;
+  padding: 32px 40px 40px;
+  border-radius: 16px;
+  background-color: #f5f1ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.in-app-metrics-cards__mobile-time-value {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-heading);
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.0142857em;
+  color: #591bd9;
+}
+
+.in-app-metrics-cards__mobile-time-lead {
+  margin: 0;
+  padding: 0;
+  max-width: 528px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.0125em;
+  color: #222222;
+}
+
+.in-app-metrics-cards__mobile-time-note {
+  margin: auto 0 0;
+  padding: 0;
+  max-width: 424px;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: #591bd9;
+}
+
+/* Демография */
+.in-app-metrics-cards__cell--demographics {
+  box-sizing: border-box;
+  width: 590px;
+  height: 484px;
+  position: relative;
+}
+
+.in-app-metrics-cards__cell--demographics::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  width: 530px;
+  height: 444px;
+  background-color: #ded0ff;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.in-app-metrics-cards__demographics-inner {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 560px;
+  padding: 0;
+  border-radius: 16px;
+  background-color: #f5f1ff;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: url('/css/blocks/in-app-metrics-cards/cuple.png');
+  background-size: 530px 444px;
+}
+
+.in-app-metrics-cards__demographics-body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 24px 40px 32px;
+}
+
+.in-app-metrics-cards__demographics-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.in-app-metrics-cards__demographics-value {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-heading);
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.0357143em;
+  color: #591bd9;
+}
+
+.in-app-metrics-cards__demographics-label {
+  padding: 0;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
