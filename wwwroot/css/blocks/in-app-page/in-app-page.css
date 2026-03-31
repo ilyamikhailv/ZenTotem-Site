@@ -1,0 +1,8 @@
+/* In-App landing. Figma: In-App_приоритет (37879:1421).
+   Секции: .in-app-hero, .in-app-additional-features, .in-app-targeting-highlights,
+   .in-app-metrics-cards, .in-app-inventory-showcase — на этапе вёрстки. */
+
+.in-app-page__content {
+  box-sizing: border-box;
+  /* светлая зона: скругление сверху, фон — по макету */
+}

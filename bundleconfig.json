@@ -13,7 +13,8 @@
       "wwwroot/css/blocks/main-technologies/main-technologies.css",
       "wwwroot/css/blocks/main-features/main-features.css",
       "wwwroot/css/blocks/demo-cabinet/demo-cabinet.css",
-      "wwwroot/css/blocks/request-platform-access/request-platform-access-button.css"
+      "wwwroot/css/blocks/request-platform-access/request-platform-access-button.css",
+      "wwwroot/css/blocks/in-app-page/in-app-page.css"
     ],
     "minify": {
       "enabled": true,
