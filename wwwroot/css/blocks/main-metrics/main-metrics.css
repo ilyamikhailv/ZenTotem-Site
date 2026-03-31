@@ -190,18 +190,19 @@
   width: 590px;
   height: 484px;
   position: relative;
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-    width: 530px;
-    height: 444px;
-    background-color: #ded0ff;
-    border-radius: 16px;
-    z-index: 0;
-  }
+}
+
+.main-metrics__cell--shows::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  width: 530px;
+  height: 444px;
+  background-color: #ded0ff;
+  border-radius: 16px;
+  z-index: 0;
 }
 
 .main-metrics__shows-inner {
