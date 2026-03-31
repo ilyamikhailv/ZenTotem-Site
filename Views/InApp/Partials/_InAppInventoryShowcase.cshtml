@@ -1,2 +1,99 @@
-@* Роль: визуализация категорий приложений и крупная метрика «5 млрд рекламных запросов в сутки».
-  Figma: In-App_приоритет → dino (37879:1503). Родитель: Views/InApp/Index.cshtml. *@
+@* Роль: визуализация категорий приложений и крупная метрика «5 млрд рекламных запросов в сутки». Figma:
+In-App_приоритет → dino (37879:1503). Родитель: Views/InApp/Index.cshtml. *@
+<section class="in-app-inventory-showcase" aria-label="Объём рекламных запросов и категории приложений">
+  <div class="in-app-inventory-showcase__inner">
+    <div class="in-app-inventory-showcase__card">
+      <h2 class="in-app-inventory-showcase__title">
+        <span class="in-app-inventory-showcase__title-line">5 000 000 000</span>
+        <span class="in-app-inventory-showcase__title-line">рекламных запросов в сутки</span>
+      </h2>
+      <div class="in-app-inventory-showcase__diagram-icons">
+        <div class="in-app-inventory-showcase__icons-wrapper">
+          <img
+            class="icon icon--opacity-02 icon--1"
+            src="~/css/blocks/in-app-inventory-showcase/icon-sun-full.svg"
+            width="85"
+            height="85"
+            alt=""
+            decoding="async"
+            aria-hidden="true"
+          />
+          <img
+            class="icon icon--2"
+            src="~/css/blocks/in-app-inventory-showcase/icon-sun-full.svg"
+            width="85"
+            height="85"
+            alt=""
+            decoding="async"
+            aria-hidden="true"
+          />
+          <img
+            class="icon icon--opacity-02 icon--3"
+            src="~/css/blocks/in-app-inventory-showcase/icon-sun-full.svg"
+            width="85"
+            height="85"
+            alt=""
+            decoding="async"
+            aria-hidden="true"
+          />
+          <img
+            class="icon icon--opacity-02 icon--4"
+            src="~/css/blocks/in-app-inventory-showcase/icon-moon.svg"
+            width="85"
+            height="85"
+            alt=""
+            decoding="async"
+            aria-hidden="true"
+          />
+        </div>
+      </div>
+
+      <div class="in-app-inventory-showcase__diagram-columns">
+        <div class="in-app-inventory-showcase__column">
+          <ul class="in-app-inventory-showcase__chips">
+            <li><span class="in-app-inventory-showcase__pill">Новости</span></li>
+            <li><span class="in-app-inventory-showcase__pill">Финансы</span></li>
+            <li><span class="in-app-inventory-showcase__pill">Погода</span></li>
+            <li><span class="in-app-inventory-showcase__pill">Карты</span></li>
+          </ul>
+        </div>
+        <div class="in-app-inventory-showcase__column">
+          <ul class="in-app-inventory-showcase__chips">
+            <li>
+              <span class="in-app-inventory-showcase__pill in-app-inventory-showcase__pill--accent">Покупки</span>
+            </li>
+            <li>
+              <span class="in-app-inventory-showcase__pill in-app-inventory-showcase__pill--accent">Соцсети</span>
+            </li>
+            <li>
+              <span class="in-app-inventory-showcase__pill in-app-inventory-showcase__pill--accent">Утилиты</span>
+            </li>
+          </ul>
+        </div>
+        <div class="in-app-inventory-showcase__column">
+          <ul class="in-app-inventory-showcase__chips">
+            <li><span class="in-app-inventory-showcase__pill">Новости</span></li>
+            <li><span class="in-app-inventory-showcase__pill">Соцсети</span></li>
+            <li><span class="in-app-inventory-showcase__pill">Игры</span></li>
+          </ul>
+        </div>
+        <div class="in-app-inventory-showcase__column">
+          <ul class="in-app-inventory-showcase__chips">
+            <li><span class="in-app-inventory-showcase__pill">Игры</span></li>
+            <li><span class="in-app-inventory-showcase__pill">Музыка</span></li>
+            <li><span class="in-app-inventory-showcase__pill">Подкасты</span></li>
+          </ul>
+        </div>
+      </div>
+      <img
+        class="in-app-inventory-showcase__footer-deco"
+        src="~/css/blocks/in-app-inventory-showcase/in-app-inventory-footer.png"
+        width="80"
+        height="74"
+        alt=""
+        decoding="async"
+        aria-hidden="true"
+      />
+    </div>
+  </div>
+</section>

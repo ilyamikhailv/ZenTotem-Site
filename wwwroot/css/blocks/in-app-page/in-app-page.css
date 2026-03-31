@@ -1,6 +1,7 @@
 /* In-App landing. Figma: In-App_приоритет (37879:1421).
    Секции: .in-app-hero, .in-app-features (37879:1458 first_icons), .in-app-additional-features,
-   .in-app-targeting-highlights, .in-app-metrics-cards, .in-app-inventory-showcase. */
+   .in-app-targeting-highlights, .in-app-metrics-cards, .in-app-inventory-showcase (37879:1503 dino;
+   стили: wwwroot/css/blocks/in-app-inventory-showcase/in-app-inventory-showcase.css). */
 
 .in-app-page__content {
   box-sizing: border-box;

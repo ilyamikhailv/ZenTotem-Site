@@ -1,0 +1,194 @@
+/* Блок dino — Views/InApp/Partials/_InAppInventoryShowcase.cshtml. Figma: 37879:1503 */
+
+.in-app-inventory-showcase {
+  box-sizing: border-box;
+  padding-bottom: 120px;
+  background-color: #ffffff;
+  padding-top: 70px;
+}
+
+.in-app-inventory-showcase__inner {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.in-app-inventory-showcase__card {
+  box-sizing: border-box;
+  position: relative;
+  overflow: visible;
+  border-radius: 16px;
+  border: 0.5px solid rgba(34, 34, 34, 0.16);
+  background-color: #ffffff;
+  padding: 70px 0 32px;
+  height: 744px;
+}
+
+.in-app-inventory-showcase__title {
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 848px;
+  font-family: var(--font-heading);
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.005357em;
+  text-align: center;
+  color: #591bd9;
+}
+
+.in-app-inventory-showcase__title-line {
+  display: block;
+}
+
+.in-app-inventory-showcase__diagram {
+  box-sizing: border-box;
+  margin: 100px auto 0;
+  max-width: 766px;
+  width: 100%;
+}
+
+.in-app-inventory-showcase__diagram-panel {
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 28px 24px 32px;
+}
+
+.in-app-inventory-showcase__diagram-icons {
+  display: block;
+  height: 225px;
+  border-bottom: 2px solid rgba(89, 27, 217, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.in-app-inventory-showcase__icon-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100px;
+}
+
+.in-app-inventory-showcase__icon {
+  display: block;
+  width: 85px;
+  height: 85px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.in-app-inventory-showcase__icon--flip {
+  transform: scaleX(-1);
+}
+
+.in-app-inventory-showcase__icon-notch {
+  display: block;
+  width: 28px;
+  height: 5px;
+  margin-top: 6px;
+  border-radius: 1px;
+  background-color: #ffffff;
+}
+
+.in-app-inventory-showcase__diagram-rule {
+  height: 1px;
+  margin: 0 -24px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.in-app-inventory-showcase__diagram-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 16px;
+  margin: 0 auto;
+  align-items: start;
+  width: 766px;
+  padding-top: 80px;
+}
+
+.in-app-inventory-showcase__column {
+  min-width: 0;
+}
+
+.in-app-inventory-showcase__chips {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.in-app-inventory-showcase__chips li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+
+.in-app-inventory-showcase__pill {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background-color: #f5f5f5;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  text-align: center;
+  color: #591bd9;
+}
+
+.in-app-inventory-showcase__pill--accent {
+  border-color: transparent;
+  background-color: #591bd9;
+  color: #ffffff;
+}
+
+.in-app-inventory-showcase__footer-deco {
+  position: absolute;
+  left: 31.64%;
+  bottom: -12px;
+  width: 80px;
+  height: auto;
+  max-width: calc(100% - 48px);
+  opacity: 0.8;
+  pointer-events: none;
+}
+.in-app-inventory-showcase__icons-wrapper {
+  width: 766px;
+  margin: 0 auto;
+  height: inherit;
+  position: relative;
+}
+.icon {
+  position: absolute;
+}
+.icon--opacity-02 {
+  opacity: 0.2;
+}
+.icon--1 {
+  bottom: -42.5px;
+}
+.icon--2 {
+  bottom: 37px;
+  left: 170px;
+}
+.icon--3 {
+  bottom: -42.5px;
+  left: 434px;
+}
+.icon--4 {
+  bottom: 37px;
+  left: 647px;
+}
