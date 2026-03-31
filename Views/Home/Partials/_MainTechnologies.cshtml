@@ -1,7 +1,103 @@
 @*
-  Роль: блок «Наши технологии» — карточки про анализ, таргетинг и контроль качества.
-  Figma: Main_1 / second → technologies.
-  Родитель: Views/Home/Index.cshtml
+  Роль: блок «25 технологических модулей» — карточки модулей таргетинга.
+  Figma: узлы 37879:1811–1863. Родитель: Views/Home/Index.cshtml
 *@
-<section class="main-technologies" aria-label="Наши технологии">
+<section class="main-technologies" id="technologies" aria-label="Технологические модули">
+  <div class="main-technologies__inner">
+    <header class="main-technologies__header">
+      <h2 class="main-technologies__title">
+        <span>25 технологических модулей</span><br />
+        для лучшего результата
+      </h2>
+      @* TODO: подставить URL страницы с описанием технологий, когда появится маршрут *@
+      <a class="main-technologies__lead-link" href="#">Подробнее о наших технологиях</a>
+    </header>
+
+    <ul class="main-technologies__grid" role="list">
+      <li class="main-technologies__cell">
+        <article class="main-technologies__card">
+          <img class="main-technologies__card-arrow" src="~/images/main-technologies/main-technologies-arrow.svg" width="46" height="46" alt="" aria-hidden="true" decoding="async" />
+          <div class="main-technologies__icon-wrap">
+            <img class="main-technologies__icon" src="~/images/main-technologies/main-technologies-semantic.svg" width="100" height="100" alt="" decoding="async" />
+          </div>
+          <h3 class="main-technologies__card-title">
+            Семантический<br />
+            контекстный таргетинг
+          </h3>
+          <p class="main-technologies__card-text">
+            Показываем рекламу тем, у кого установлены похожие приложения или есть интерес к ним. Учитываем содержание текста, ключевые сигналы на странице и семантическую близость
+          </p>
+        </article>
+      </li>
+      <li class="main-technologies__cell">
+        <article class="main-technologies__card">
+          <img class="main-technologies__card-arrow" src="~/images/main-technologies/main-technologies-arrow.svg" width="46" height="46" alt="" aria-hidden="true" decoding="async" />
+          <div class="main-technologies__icon-wrap">
+            <img class="main-technologies__icon" src="~/images/main-technologies/main-technologies-behavioral.svg" width="100" height="100" alt="" decoding="async" />
+          </div>
+          <h3 class="main-technologies__card-title">
+            Поведенческий<br />
+            таргетинг
+          </h3>
+          <p class="main-technologies__card-text">
+            Анализируем поведение пользователей — во что они играют, какие темы читают и смотрят, что ищут и как ведут себя в приложениях. Для CTV кампаний анализируем домохозяйства
+          </p>
+        </article>
+      </li>
+      <li class="main-technologies__cell">
+        <article class="main-technologies__card">
+          <img class="main-technologies__card-arrow" src="~/images/main-technologies/main-technologies-arrow.svg" width="46" height="46" alt="" aria-hidden="true" decoding="async" />
+          <div class="main-technologies__icon-wrap">
+            <img class="main-technologies__icon" src="~/images/main-technologies/main-technologies-lists.svg" width="100" height="100" alt="" decoding="async" />
+          </div>
+          <h3 class="main-technologies__card-title">Поддержка списков</h3>
+          <p class="main-technologies__card-text">
+            Управляем показами через списки IP-адресов, доменов, приложений и идентификаторов мобильных устройств, чтобы точно включать или исключать нужные источники
+          </p>
+        </article>
+      </li>
+      <li class="main-technologies__cell">
+        <article class="main-technologies__card">
+          <img class="main-technologies__card-arrow" src="~/images/main-technologies/main-technologies-arrow.svg" width="46" height="46" alt="" aria-hidden="true" decoding="async" />
+          <div class="main-technologies__icon-wrap">
+            <img class="main-technologies__icon" src="~/images/main-technologies/main-technologies-quality.svg" width="100" height="100" alt="" decoding="async" />
+          </div>
+          <h3 class="main-technologies__card-title">Контроль качества издателей</h3>
+          <p class="main-technologies__card-text">
+            Оцениваем тематику, вовлеченность, техническое состояние мест размещений и риски для бренда, чтобы выключать слабые и опасные источники
+          </p>
+        </article>
+      </li>
+      <li class="main-technologies__cell">
+        <article class="main-technologies__card">
+          <img class="main-technologies__card-arrow" src="~/images/main-technologies/main-technologies-arrow.svg" width="46" height="46" alt="" aria-hidden="true" decoding="async" />
+          <div class="main-technologies__icon-wrap">
+            <img class="main-technologies__icon" src="~/images/main-technologies/main-technologies-recommender.svg" width="100" height="100" alt="" decoding="async" />
+          </div>
+          <h3 class="main-technologies__card-title">
+            Рекомендательная<br />
+            система таргетинга
+          </h3>
+          <p class="main-technologies__card-text">
+            Управляем показами через списки IP-адресов, доменов, приложений и идентификаторов мобильных устройств, чтобы точно включать или исключать нужные источники
+          </p>
+        </article>
+      </li>
+      <li class="main-technologies__cell">
+        <article class="main-technologies__card">
+          <img class="main-technologies__card-arrow" src="~/images/main-technologies/main-technologies-arrow.svg" width="46" height="46" alt="" aria-hidden="true" decoding="async" />
+          <div class="main-technologies__icon-wrap">
+            <img class="main-technologies__icon" src="~/images/main-technologies/main-technologies-enrichment.svg" width="100" height="100" alt="" decoding="async" />
+          </div>
+          <h3 class="main-technologies__card-title">
+            Обогащение<br />
+            сторонними решениями
+          </h3>
+          <p class="main-technologies__card-text">
+            Подключаем внешние данные: добавляем поведенческие и демографические сигналы для повышения точности таргетинга
+          </p>
+        </article>
+      </li>
+    </ul>
+  </div>
 </section>
