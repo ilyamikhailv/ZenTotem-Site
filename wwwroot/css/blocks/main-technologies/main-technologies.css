@@ -84,6 +84,9 @@
   right: 22px;
   display: block;
   flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  background: url('/css/blocks/main-technologies/main-technologies-arrow.svg') no-repeat center / contain;
 }
 
 .main-technologies__icon-wrap {
@@ -91,12 +94,33 @@
   height: 100px;
   flex-shrink: 0;
   margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.main-technologies__icon {
-  display: block;
-  width: 100px;
-  height: 100px;
+.main-technologies__icon-wrap--semantic {
+  background-image: url('/css/blocks/main-technologies/main-technologies-semantic.svg');
+}
+
+.main-technologies__icon-wrap--behavioral {
+  background-image: url('/css/blocks/main-technologies/main-technologies-behavioral.svg');
+}
+
+.main-technologies__icon-wrap--lists {
+  background-image: url('/css/blocks/main-technologies/main-technologies-lists.svg');
+}
+
+.main-technologies__icon-wrap--quality {
+  background-image: url('/css/blocks/main-technologies/main-technologies-quality.svg');
+}
+
+.main-technologies__icon-wrap--recommender {
+  background-image: url('/css/blocks/main-technologies/main-technologies-recommender.svg');
+}
+
+.main-technologies__icon-wrap--enrichment {
+  background-image: url('/css/blocks/main-technologies/main-technologies-enrichment.svg');
 }
 
 .main-technologies__card-title {
