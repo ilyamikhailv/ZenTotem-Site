@@ -1,2 +1,18 @@
 @* Герой CTV — фрейм first (37879:1013). Vector 12 в макете не верстаем.
-   Родитель: Views/Ctv/Index.cshtml. *@
+   Родитель: Views/Ctv/Index.cshtml. Стили: wwwroot/css/blocks/ctv-hero/ctv-hero.css. *@
+<section class="ctv-hero" aria-label="CTV">
+  <div class="ctv-hero__inner">
+    <div class="ctv-hero__content">
+      <h1 class="ctv-hero__title">
+        Ваш бренд<br />
+        на большом экране
+      </h1>
+      <div class="ctv-hero__lead">
+        <span>Непропускаемые ролики на Smart TV, ТВ-приставках и игровых консолях</span>
+      </div>
+    </div>
+    <div class="ctv-hero__cta">
+      <partial name="_RequestPlatformAccessButton" />
+    </div>
+  </div>
+</section>

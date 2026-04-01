@@ -1,0 +1,69 @@
+/**
+ * Герой страницы CTV — Views/Ctv/Partials/_CtvHero.cshtml.
+ * Figma: CTV_приоритет → first (37879:1013). Фон градиента — body (page.css).
+ */
+
+.ctv-hero {
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.ctv-hero__inner {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 120px 24px 180px;
+}
+
+.ctv-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1078px;
+}
+
+.ctv-hero__title {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ctv-hero__lead {
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3333333333333333;
+  letter-spacing: -0.0125em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ctv-hero__cta {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .ctv-hero__inner {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .ctv-hero__title {
+    font-size: 64px;
+    letter-spacing: -0.005em;
+  }
+}
