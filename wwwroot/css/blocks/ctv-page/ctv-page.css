@@ -1,0 +1,9 @@
+/**
+ * Обёртка белой зоны страницы CTV — Views/Ctv/Index.cshtml (.ctv-page__content).
+ */
+
+.ctv-page__content {
+  border-radius: 32px 32px 0 0;
+  background: #fff;
+  padding: 100px 0 120px;
+}
