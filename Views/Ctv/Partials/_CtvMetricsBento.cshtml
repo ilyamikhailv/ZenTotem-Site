@@ -1,1 +1,99 @@
-@* Блок cells (бенто) — Figma (37879:1092). Родитель: Views/Ctv/Index.cshtml. *@
+@* Блок cells (бенто) — Figma (37879:1092). Родитель: Views/Ctv/Index.cshtml.
+   Стили: wwwroot/css/blocks/ctv-metrics-bento/ctv-metrics-bento.css. *@
+<section class="ctv-metrics-bento" aria-label="Метрики CTV">
+  <div class="ctv-metrics-bento__inner">
+    <div class="ctv-metrics-bento__grid">
+      <article class="ctv-metrics-bento__cell ctv-metrics-bento__cell--targeting">
+        <h2 class="ctv-metrics-bento__targeting-title">
+          Точный таргетинг<br />
+          аудитории
+        </h2>
+        <p class="ctv-metrics-bento__targeting-lead">
+          Таргетинг по интересам,<br />
+          поведению и демографии
+        </p>
+      </article>
+
+      <article class="ctv-metrics-bento__cell ctv-metrics-bento__cell--ctv">
+        <span class="ctv-metrics-bento__ctv-label">CTV</span>
+        <p class="ctv-metrics-bento__ctv-caption">
+          Средний показатель<br />
+          досмотров CTV рекламы
+        </p>
+        <p class="ctv-metrics-bento__ctv-value">98%</p>
+      </article>
+
+      <article class="ctv-metrics-bento__cell ctv-metrics-bento__cell--preroll">
+        <div class="ctv-metrics-bento__preroll-visual" aria-hidden="true">
+          <img
+            class="ctv-metrics-bento__preroll-bg"
+            src="~/css/blocks/ctv-metrics-bento/ctv-metrics-preroll-bg.png"
+            width="886"
+            height="626"
+            alt=""
+          />
+          <span class="ctv-metrics-bento__preroll-overlay"></span>
+        </div>
+        <div class="ctv-metrics-bento__preroll-content">
+          <h3 class="ctv-metrics-bento__preroll-heading">Форматы размещения CTV рекламы</h3>
+          <div class="ctv-metrics-bento__preroll-copy">
+            <p class="ctv-metrics-bento__preroll-title">Pre-roll</p>
+            <p class="ctv-metrics-bento__preroll-subtitle">Ролик до основного контента</p>
+          </div>
+          <div class="ctv-metrics-bento__preroll-progress" aria-hidden="true">
+            <span class="ctv-metrics-bento__preroll-progress-track"></span>
+            <span class="ctv-metrics-bento__preroll-progress-fill"></span>
+          </div>
+          <div class="ctv-metrics-bento__preroll-controls">
+            <div class="ctv-metrics-bento__preroll-controls-left">
+              <img
+                class="ctv-metrics-bento__preroll-icon"
+                src="~/css/blocks/ctv-metrics-bento/ctv-metrics-icon-pause.svg"
+                width="40"
+                height="40"
+                alt=""
+              />
+              <img
+                class="ctv-metrics-bento__preroll-icon"
+                src="~/css/blocks/ctv-metrics-bento/ctv-metrics-icon-volume.svg"
+                width="40"
+                height="40"
+                alt=""
+              />
+            </div>
+            <img
+              class="ctv-metrics-bento__preroll-icon"
+              src="~/css/blocks/ctv-metrics-bento/ctv-metrics-icon-maximize.svg"
+              width="40"
+              height="40"
+              alt=""
+            />
+          </div>
+        </div>
+      </article>
+
+      <article class="ctv-metrics-bento__cell ctv-metrics-bento__cell--audience">
+        <div class="ctv-metrics-bento__audience-card">
+          <div class="ctv-metrics-bento__audience-bars" aria-hidden="true">
+            <span class="ctv-metrics-bento__audience-bar">
+              <span class="ctv-metrics-bento__audience-bar-fill"></span>
+            </span>
+            <span class="ctv-metrics-bento__audience-bar"></span>
+          </div>
+          <p class="ctv-metrics-bento__audience-main-value">58 000 000</p>
+          <p class="ctv-metrics-bento__audience-main-caption">подписчиков онлайн-кинотеатров</p>
+          <div class="ctv-metrics-bento__audience-split">
+            <div class="ctv-metrics-bento__audience-stat">
+              <p class="ctv-metrics-bento__audience-stat-value">54 млн</p>
+              <p class="ctv-metrics-bento__audience-stat-label">Устройств Smart TV</p>
+            </div>
+            <div class="ctv-metrics-bento__audience-stat">
+              <p class="ctv-metrics-bento__audience-stat-value">12 млн</p>
+              <p class="ctv-metrics-bento__audience-stat-label">IPTV абонентов</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
