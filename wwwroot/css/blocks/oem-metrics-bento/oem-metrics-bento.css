@@ -1,0 +1,331 @@
+/**
+ * Блок метрик OEM (bento) — Views/Oem/Partials/_OemMetricsBento.cshtml.
+ * Figma: Frame 1597879854 (37879:1288).
+ */
+
+.oem-metrics-bento {
+  box-sizing: border-box;
+  margin-bottom: 120px;
+  color: #222222;
+}
+
+.oem-metrics-bento__inner {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.oem-metrics-bento__grid {
+  display: grid;
+  grid-template-columns: 670px 590px;
+  grid-template-rows: 484px 484px;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Трекинг + логотипы */
+.oem-metrics-bento__cell--tracking {
+  box-sizing: border-box;
+  position: relative;
+  width: 670px;
+  height: 484px;
+  border-radius: 16px;
+  background-color: #f5f1ff;
+  overflow: hidden;
+}
+
+.oem-metrics-bento__tracking-board {
+  position: absolute;
+  inset: 0;
+  bottom: 58px;
+}
+
+.oem-metrics-bento__tracking-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.oem-metrics-bento__tracking-line--horizontal {
+  position: absolute;
+  left: 40px;
+  top: 140px;
+  width: 590px;
+  height: 2px;
+  background-color: #ded0ff;
+}
+
+.oem-metrics-bento__tracking-line--vertical {
+  position: absolute;
+  left: 391px;
+  top: 32px;
+  width: 2px;
+  height: 272px;
+  background-color: #ded0ff;
+}
+
+.oem-metrics-bento__tracking-logo {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  height: auto;
+}
+
+.oem-metrics-bento__tracking-logo--appsflyer {
+  left: 40px;
+  top: 32px;
+  width: 222px;
+}
+
+.oem-metrics-bento__tracking-logo--branch {
+  left: 483px;
+  top: 32px;
+  width: 155px;
+}
+
+.oem-metrics-bento__tracking-logo--appmetrica {
+  left: 40px;
+  top: 248px;
+  width: 293px;
+}
+
+.oem-metrics-bento__tracking-logo--adjust {
+  left: 443px;
+  top: 244px;
+  width: 195px;
+}
+
+.oem-metrics-bento__tracking-caption {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 32px;
+  margin: 0;
+  z-index: 2;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
+
+/* 100% видимость */
+.oem-metrics-bento__cell--visibility {
+  box-sizing: border-box;
+  width: 590px;
+  height: 340px;
+  align-self: end;
+  padding: 32px 40px 40px;
+  border-radius: 16px;
+  background-color: #591bd9;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.oem-metrics-bento__visibility-value {
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+  font-family: var(--font-heading);
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.0142857em;
+  color: #ffffff;
+}
+
+.oem-metrics-bento__visibility-text {
+  margin: auto 0 0;
+  padding: 0;
+  max-width: 379px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.0125em;
+  color: #ffffff;
+}
+
+/* 50М охват */
+.oem-metrics-bento__cell--reach {
+  box-sizing: border-box;
+  width: 670px;
+  height: 484px;
+  padding: 32px 40px 40px;
+  border-radius: 16px;
+  background-color: #f5f1ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.oem-metrics-bento__reach-value {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-heading);
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.0142857em;
+  color: #591bd9;
+}
+
+.oem-metrics-bento__reach-lead {
+  margin: 0;
+  padding: 0;
+  max-width: 528px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.0125em;
+  color: #222222;
+}
+
+.oem-metrics-bento__reach-note {
+  margin: auto 0 0;
+  padding: 0;
+  max-width: 493px;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: #591bd9;
+}
+
+/* Плейсхолдер */
+.oem-metrics-bento__cell--placeholder {
+  box-sizing: border-box;
+  width: 590px;
+  height: 484px;
+  position: relative;
+}
+
+.oem-metrics-bento__cell--placeholder::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  width: 530px;
+  height: 444px;
+  background-color: #ded0ff;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.oem-metrics-bento__placeholder-inner {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 560px;
+  padding: 32px 40px 40px;
+  border-radius: 16px;
+  background-color: #f5f1ff;
+}
+
+.oem-metrics-bento__placeholder-bars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.oem-metrics-bento__placeholder-bar {
+  display: block;
+  height: 4px;
+  width: 115px;
+  border-radius: 100px;
+  background-color: #ded0ff;
+}
+
+.oem-metrics-bento__placeholder-bar--short {
+  width: 89px;
+}
+
+.oem-metrics-bento__placeholder-text {
+  margin: auto 0 0;
+  padding: 0;
+  max-width: 20em;
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
+
+@media (max-width: 1279px) {
+  .oem-metrics-bento__inner {
+    padding: 0 24px;
+  }
+
+  .oem-metrics-bento__grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    gap: 20px;
+  }
+
+  .oem-metrics-bento__cell--tracking,
+  .oem-metrics-bento__cell--reach {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+    min-height: 484px;
+  }
+
+  .oem-metrics-bento__cell--visibility,
+  .oem-metrics-bento__cell--placeholder {
+    width: 100%;
+    max-width: 590px;
+    align-self: stretch;
+  }
+
+  .oem-metrics-bento__cell--visibility {
+    height: auto;
+    min-height: 340px;
+  }
+
+  .oem-metrics-bento__cell--placeholder {
+    height: auto;
+    min-height: 484px;
+  }
+
+  .oem-metrics-bento__placeholder-inner {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .oem-metrics-bento__tracking-logo--branch {
+    left: auto;
+    right: 32px;
+  }
+
+  .oem-metrics-bento__tracking-logo--adjust {
+    left: auto;
+    right: 32px;
+  }
+}
+
+@media (max-width: 719px) {
+  .oem-metrics-bento__cell--tracking {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .oem-metrics-bento__tracking-board {
+    min-width: 670px;
+  }
+
+  .oem-metrics-bento__visibility-value,
+  .oem-metrics-bento__reach-value {
+    font-size: clamp(3rem, 14vw, 8.75rem);
+  }
+}
